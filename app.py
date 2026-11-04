@@ -42,10 +42,6 @@ st.sidebar.caption("Proyecto académico")
 st.sidebar.caption("Versión 1.0")
 
 
-# =====================================================
-# PÁGINA DE INICIO
-# =====================================================
-
 if menu == "Inicio":
 
     st.markdown(
@@ -71,7 +67,7 @@ if menu == "Inicio":
     procedimientos matemáticos utilizados en su valuación.
     """)
 
-    # INDICADORES GENERALES
+
 
     col1, col2, col3 = st.columns(3)
 
@@ -87,16 +83,16 @@ if menu == "Inicio":
 
     with col1:
 
-        st.markdown("### 💰 Valor del dinero")
+        st.markdown("###  Valor del dinero")
         st.write("Valor presente, valor futuro y tasas de interés.")
 
-        st.markdown("### 🔄 Forward y Futures")
+        st.markdown("###  Forward y Futures")
         st.write("Valuación de contratos y posiciones financieras.")
 
-        st.markdown("### 📊 Opciones financieras")
+        st.markdown("###  Opciones financieras")
         st.write("Opciones Call, Put y sus componentes.")
 
-        st.markdown("### ⚖️ Arbitraje")
+        st.markdown("###  Arbitraje")
         st.write("Paridad Put-Call y oportunidades de arbitraje.")
 
     with col2:
@@ -104,13 +100,13 @@ if menu == "Inicio":
         st.markdown("### 📈 Estrategias con opciones")
         st.write("Combinaciones de posiciones y resultados.")
 
-        st.markdown("### 🌳 Modelo binomial")
+        st.markdown("###  Modelo binomial")
         st.write("Árboles de precios y valuación de opciones.")
 
-        st.markdown("### 📉 Griegas")
+        st.markdown("###  Griegas")
         st.write("Medidas de riesgo de las opciones.")
 
-        st.markdown("### 🔁 Swaps")
+        st.markdown("###  Swaps")
         st.write("Flujos y valuación de contratos Swap.")
 
     st.divider()
@@ -121,9 +117,6 @@ if menu == "Inicio":
     )
 
 
-# =====================================================
-# RESTO DE LOS MÓDULOS
-# =====================================================
 
 else:
 
