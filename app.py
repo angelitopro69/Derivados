@@ -8,80 +8,33 @@ import sympy as sp
 from io import BytesIO
 from datetime import datetime
 
-# =====================================================
-# DERIVACALC
-# Calculadora de Productos Financieros Derivados
-# =====================================================
 
-# CONFIGURACIÓN DE LA PÁGINA
-st.set_page_config(
-    page_title="DerivaCalc | Finanzas",
-    page_icon="📈",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+st.set_page_config(page_title="Calculadora", layout="wide", initial_sidebar_state="expanded")
 
-# =====================================================
-# DISEÑO VISUAL
-# =====================================================
 
 st.markdown("""
 <style>
 
-    .main-title {
-        font-size: 42px;
-        font-weight: 800;
-        color: #2563EB;
-        letter-spacing: 2px;
-    }
+    .main-title {font-size: 42px; font-weight: 800; color: #2563EB; letter-spacing: 2px;}
 
-    .subtitle {
-        font-size: 17px;
-        color: #94A3B8;
-    }
+    .subtitle {font-size: 17px;color: #94A3B8;}
 
-    .section-title {
-        font-size: 23px;
-        font-weight: 700;
-    }
+    .section-title {font-size: 23px; font-weight: 700;}
 
-    div[data-testid="stMetric"] {
-        background-color: rgba(128,128,128,0.08);
-        padding: 18px;
-        border-radius: 12px;
-    }
+    div[data-testid="stMetric"] {background-color: rgba(128,128,128,0.08); padding: 18px; border-radius: 12px;}
 
 </style>
 """, unsafe_allow_html=True)
 
 
-# =====================================================
-# MENÚ LATERAL
-# =====================================================
+st.sidebar.title("Calculadora")
 
-st.sidebar.title("📈 DERIVACALC")
-
-st.sidebar.caption(
-    "Calculadora de Productos Financieros Derivados"
-)
+st.sidebar.caption("Calculadora de Productos Financieros Derivados")
 
 st.sidebar.divider()
 
-menu = st.sidebar.radio(
-    "NAVEGACIÓN",
-    [
-        "Inicio",
-        "Valor del dinero",
-        "Forward y Futures",
-        "Opciones financieras",
-        "Estrategias con opciones",
-        "Arbitraje",
-        "Modelo binomial",
-        "Griegas",
-        "Swaps",
-        "Reportes"
-    ]
-)
+menu = st.sidebar.radio("NAVEGACIÓN", ["Inicio", "Valor del dinero", "Forward y Futures", "Opciones financieras", "Estrategias con opciones", 
+                                       "Arbitraje", "Modelo binomial", "Griegas", "Swaps", "Reportes"])
 
 st.sidebar.divider()
 
